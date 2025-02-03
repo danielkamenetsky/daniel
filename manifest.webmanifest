@@ -1,6 +1,6 @@
 {
-  "name": "Matrix Rain Effect by Sumit",
-  "short_name": "Matrix Effect",
+  "name": "Portfolio of Daniel Kamenetsky",
+  "short_name": "Portfolio",
   "icons": [
     {
       "src": "assets/img/android-chrome-192x192.png",
@@ -23,8 +23,8 @@
   "background_color": "#000000",
   "display": "standalone",
   "lang": "en-US",
-  "id": "https://sumitkcs.github.io/matrix-effect/",
+  "id": "https://danielkamenetsky.github.io/daniel/",
   "start_url": "/matrix-effect/",
   "scope": "/matrix-effect/",
-  "description": "A matrix rain animation app."
+  "description": "A portfolio app with a matrix effect."
 }
