@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
     <meta property="og:title" content="Matrix Rain Effect" />
     <meta property="og:image" itemprop="image"
         content="https://sumitkcs.github.io/matrix-effect/assets/img/preview-green.png" />
@@ -22,23 +22,145 @@
     <meta name="keywords"
         content="HTML, CSS, JavaScript, Canvas API, mouse trail, animation, particles, constellation" />
     <meta name="author" content="Er. Sumit Kumar" />
-    <title>Matrix Rain Effect</title>
     <link rel="icon" type="image/png" href="assets/img/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="canonical" href="https://sumitKcs.github.io/matrix-effect" />
-
 </head>
 
 <body>
-
     <canvas id="canvas"></canvas>
+    
+    <nav class="nav-container">
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
 
-    <script defer src="assets/js/app.js" type="module"></script>
+    <div class="portfolio-container">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <h1>Daniel Kamenetsky </h1>
+            <p class="title">Software Developer</p>
+            <p class="tagline">Crafting digital experiences with code and creativity</p>
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="social-link github-link">GitHub</a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="social-link linkedin-link">LinkedIn</a>
+                <a href="mailto:your.email@example.com" class="social-link email-link">Email</a>
+            </div>
+        </section>
 
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="content">
+                <p class="intro">Hello, I am</p>
+                <h1 class="name">Daniel</h1>
+                <h2 class="title">Software Developer and CPA</h2>
+                <p class="description">
+                    Passionate Software Developer specializing in <span class="highlight">Python</span> and <span class="highlight">React</span>. Previously a CPA at <span class="highlight">Deloitte</span> and <span class="highlight">General Electric</span>, with experience in software development and the financial industry. Skilled in developing custom solutions and automating workflows to solve complex business challenges efficiently.  
+
+                    Worked at <span class="highlight">York Region</span>, where I built software solutions for <span class="highlight"><a href="https://orderup.ai" target="_blank">OrderUp</a></span> and <span class="highlight"><a href="https://theboatlink.com" target="_blank">Boatlink</a></span>. Adept at understanding business needs and creating innovative solutions that drive sustainable growth.  
+                    
+          
+                </p>
+                <a href="#contact" class="cta-button">Let's Talk</a>
+                <div class="social-links">
+                    <a href="https://github.com" target="_blank" class="icon github"></a>
+                    <a href="https://linkedin.com" target="_blank" class="icon linkedin"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <a href="https://stockqueryapplication.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/img/stockviewer.png" alt="Project 1 Thumbnail" class="project-thumbnail">
+                    </a>
+                    <h3 class="project-title">Stock Query Application</h3>
+                    <p class="project-description">Created a stock analysis application using React and Node.js with interactive charts using Plotly.js and D3.js, integrating Alpha Vantage API with backend caching for optimized data retrieval. Implemented responsive design with Tailwind CSS, enabling multi-ticker search and custom date range analysis.</p>
+                    <div class="project-links">
+                        <a href="https://stockqueryapplication.vercel.app/" target="_blank" class="project-link">Visit Project</a>
+                        <a href="https://github.com/danielkamenetsky/stockquery" target="_blank" class="project-link">Source on GitHub</a>
+                    </div>
+                </div>
+                <!-- Add more project cards here -->
+                <div class="project-card">
+                    <a href="https://magical-coin-tracker-e4f3fa405d71.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/img/cryptotxns.png" alt="Project 2 Thumbnail" class="project-thumbnail">
+                    </a>
+                    <h3 class="project-title">Crypto Transaction Tracker</h3>
+                    <p class="project-description">Developed a cryptocurrency transaction management system using Python for portfolio tracking and tax reporting. Implemented CRUD functionality with an intuitive UI and secure user authentication via OAuth2. Optimized database performance with PostgreSQL and SQLAlchemy, enabling efficient trade queries</p>
+                    <div class="project-links">
+                        <a href="https://magical-coin-tracker-e4f3fa405d71.herokuapp.com/" target="_blank" class="project-link">Visit Project</a>
+                        <a href="https://github.com/danielkamenetsky/CryptoTracker" target="_blank" class="project-link">Source on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>VS Code</li>
+                        <li>Docker</li>
+                        <li>AWS</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                <div class="contact-links">
+                    <a href="mailto:your.email@example.com" class="contact-button">Email Me</a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="contact-button">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2024 Your Name. All rights reserved.</p>
+            <p>Built with HTML, CSS, and JavaScript</p>
+        </footer>
+    </div>
+
+    <script defer src="./assets/js/app.js" type="module"></script>
 </body>
-
 </html>

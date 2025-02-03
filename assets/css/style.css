@@ -3,11 +3,259 @@
 *::before {
     box-sizing: border-box;
     margin: 0;
-    padding: o;
+    padding: 0;
     overflow: hidden;
 }
 
-#canvas {
-    border: 4px solid black;
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 
+.portfolio-container {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 3;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #0aff0a;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #0aff0a;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.projects-section {
+    padding: 4rem 0;
+}
+
+.projects-grid {
+    display: flex;
+    flex-direction: column; /* Ensure project cards are displayed vertically */
+    gap: 20px; /* Add space between project cards */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #0aff0a;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow to project cards */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-thumbnail {
+    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: contain; /* Ensure the entire image is visible */
+    display: block; /* Remove any inline spacing */
+    max-width: 100%; /* Ensure the image does not exceed the container's width */
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.project-title {
+    color: #0aff0a;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.project-description {
+    margin-bottom: 1rem;
+    font-size: 1rem; /* Change the font size of the project descriptions */
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-link {
+    color: #0aff0a;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: rgba(0, 255, 10, 0.1);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #0aff0a;
+}
+
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e2e;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto; /* Center the about section */
+}
+
+.intro {
+    font-size: 1.2rem;
+    color: #48d18d;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #48d18d;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+.highlight {
+    color: #48d18d;
+    font-weight: bold;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #48d18d;
+    color: #1e1e2e;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #36a374;
+}
+
+/* Social Icons */
+.social-links {
+    margin-top: 20px;
+}
+
+.icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    background-size: cover;
+}
+
+.github {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/25/25231.png');
+}
+
+.linkedin {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/174/174857.png');
+}
+
+/* Make scrollbar less intrusive */
+.portfolio-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.portfolio-container::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-container::-webkit-scrollbar-thumb {
+    background: #0aff0a;
+    border-radius: 4px;
+}
+
+.social-links .social-link.github-link {
+    color: #5ec040 !important;
+}
+
+.social-links .social-link.linkedin-link {
+    color: #0fb500 !important; /* LinkedIn color */
+}
+
+.social-links .social-link.email-link {
+    color: #0aff0a !important; /* Email color */
+}
+
+/* Optional: Add hover effect */
+.social-links .social-link.github-link:hover,
+.social-links .social-link.linkedin-link:hover,
+.social-links .social-link.email-link:hover {
+    text-decoration: underline;
 }
