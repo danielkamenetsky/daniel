@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="canonical" href="https://yourwebsite.com" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 
 <body>
@@ -40,121 +42,207 @@
         </div>
     </nav>
 
-    <div class="portfolio-container">
-        <!-- Hero Section -->
-        <section id="home" class="hero-section">
-            <h1>Daniel Kamenetsky </h1>
-            <p class="title">Software Developer</p>
-            <p class="tagline">Crafting digital experiences with code and creativity</p>
-            <div class="social-links">
-                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="social-link github-link">GitHub</a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="social-link linkedin-link">LinkedIn</a>
-                <a href="mailto:your.email@example.com" class="social-link email-link">Email</a>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about">
-            <div class="content">
-                <p class="intro">Hello, I am</p>
-                <h1 class="name">Daniel</h1>
-                <h2 class="title">Software Developer and CPA</h2>
-                <p class="description">
-                    Passionate Software Developer specializing in <span class="highlight">Python</span> and <span class="highlight">React</span>. Previously a CPA at <span class="highlight">Deloitte</span> and <span class="highlight">General Electric</span>, with experience in software development and the financial industry. Skilled in developing custom solutions and automating workflows to solve complex business challenges efficiently.  
-
-                    Worked at <span class="highlight">York Region</span>, where I built software solutions for <span class="highlight"><a href="https://orderup.ai" target="_blank">OrderUp</a></span> and <span class="highlight"><a href="https://theboatlink.com" target="_blank">Boatlink</a></span>. Adept at understanding business needs and creating innovative solutions that drive sustainable growth.  
-                    
-          
-                </p>
-                <a href="#contact" class="cta-button">Let's Talk</a>
+    <div class="container">
+        <div class="portfolio-container">
+            <!-- Hero Section -->
+            <section id="home" class="hero-section">
+                <h1>Daniel Kamenetsky </h1>
+                <p class="title">Software Developer </p>
                 <div class="social-links">
-                    <a href="https://github.com" target="_blank" class="icon github"></a>
-                    <a href="https://linkedin.com" target="_blank" class="icon linkedin"></a>
+                    <a href="https://github.com/danielkamenetsky" target="_blank" rel="noopener noreferrer" class="social-link github-link">GitHub</a>
+                    <a href="https://www.linkedin.com/in/d-kamenetsky/" target="_blank" rel="noopener noreferrer" class="social-link linkedin-link">LinkedIn</a>
+                    <a href="mailto:daniel.kamenetsky@gmail.com" class="social-link email-link">Email</a>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="projects-section">
-            <h2 class="section-title">My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <a href="https://stockqueryapplication.vercel.app/" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/img/stockviewer.png" alt="Project 1 Thumbnail" class="project-thumbnail">
-                    </a>
-                    <h3 class="project-title">Stock Query Application</h3>
-                    <p class="project-description">Created a stock analysis application using React and Node.js with interactive charts using Plotly.js and D3.js, integrating Alpha Vantage API with backend caching for optimized data retrieval. Implemented responsive design with Tailwind CSS, enabling multi-ticker search and custom date range analysis.</p>
-                    <div class="project-links">
-                        <a href="https://stockqueryapplication.vercel.app/" target="_blank" class="project-link">Visit Project</a>
-                        <a href="https://github.com/danielkamenetsky/stockquery" target="_blank" class="project-link">Source on GitHub</a>
+            <!-- Add this image section before your About Me content -->
+            <div class="profile-image">
+                <img src="assets/img/image.png" alt="Profile picture">
+            </div>
+
+            <!-- About Section -->
+            <section id="about" class="about">
+                <div class="content">
+                <h2 class="section-title">About Me</h2>
+                    <p class="description">
+                        Full-stack developer specializing in <span class="highlight">Python</span> and <span class="highlight">React</span>, with expertise in bridging technical solutions and business needs. Previously worked as a <span class="highlight">Deloitte</span> auditor and <span class="highlight">GE</span> Senior Financial Analyst where I lead  accounting and tax teams in various industries and developed automation tools that streamlined complex workflows.
+
+                        Pivoted into tech through a second degree in Computer Science at <span class="highlight">Queen's University</span>, as well as worked on building software solutions for <span class="highlight"><a href="https://orderup.ai" target="_blank">OrderUp</a></span> and <span class="highlight"><a href="https://theboatlink.com" target="_blank">Boatlink</a></span>. Recently completed a 12-month internship at <span class="highlight">York Region</span> Municipal Government, delivering full-stack solutions for public services.
+
+                        Currently seeking opportunities to build scalable backend systems and solve complex technical problems.
+                    </p>
+                    <!-- <a href="#contact" class="cta-button">Let's Talk</a>
+                    <div class="social-links">
+                        <a href="https://github.com" target="_blank" class="icon github"></a>
+                        <a href="https://linkedin.com" target="_blank" class="icon linkedin"></a>
+                    </div> -->
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="projects-section">
+                <h2 class="section-title">My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <a href="https://stockqueryapplication.vercel.app/" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/img/stockviewer.png" alt="Project 1 Thumbnail" class="project-thumbnail">
+                        </a>
+                        <h3 class="project-title">Stock Query Application</h3>
+                        <p class="project-description">Created a stock analysis application using React and Node.js with interactive charts using Plotly.js and D3.js, integrating Alpha Vantage API with backend caching for optimized data retrieval. Implemented responsive design with Tailwind CSS, enabling multi-ticker search and custom date range analysis.</p>
+                        <div class="project-links">
+                            <a href="https://stockqueryapplication.vercel.app/" target="_blank" class="project-link">Visit Project</a>
+                            <a href="https://github.com/danielkamenetsky/stockquery" target="_blank" class="project-link">Source on GitHub</a>
+                        </div>
+                    </div>
+                    <!-- Add more project cards here -->
+                    <div class="project-card">
+                        <a href="https://magical-coin-tracker-e4f3fa405d71.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/img/cryptotxns.png" alt="Project 2 Thumbnail" class="project-thumbnail">
+                        </a>
+                        <h3 class="project-title">Crypto Transaction Tracker</h3>
+                        <p class="project-description">Developed a cryptocurrency transaction management system using Python for portfolio tracking and tax reporting. Implemented CRUD functionality with an intuitive UI and secure user authentication via OAuth2. Optimized database performance with PostgreSQL and SQLAlchemy, enabling efficient trade queries</p>
+                        <div class="project-links">
+                            <a href="https://magical-coin-tracker-e4f3fa405d71.herokuapp.com/" target="_blank" class="project-link">Visit Project</a>
+                            <a href="https://github.com/danielkamenetsky/CryptoTracker" target="_blank" class="project-link">Source on GitHub</a>
+                        </div>
                     </div>
                 </div>
-                <!-- Add more project cards here -->
-                <div class="project-card">
-                    <a href="https://magical-coin-tracker-e4f3fa405d71.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="assets/img/cryptotxns.png" alt="Project 2 Thumbnail" class="project-thumbnail">
-                    </a>
-                    <h3 class="project-title">Crypto Transaction Tracker</h3>
-                    <p class="project-description">Developed a cryptocurrency transaction management system using Python for portfolio tracking and tax reporting. Implemented CRUD functionality with an intuitive UI and secure user authentication via OAuth2. Optimized database performance with PostgreSQL and SQLAlchemy, enabling efficient trade queries</p>
-                    <div class="project-links">
-                        <a href="https://magical-coin-tracker-e4f3fa405d71.herokuapp.com/" target="_blank" class="project-link">Visit Project</a>
-                        <a href="https://github.com/danielkamenetsky/CryptoTracker" target="_blank" class="project-link">Source on GitHub</a>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="skills-section">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-wrapper">
+                    <div class="skills-container">
+                        <div class="skill-group">
+                            <h3><i class="fas fa-code"></i> Languages</h3>
+                            <div class="skill-item">
+                                <i class="devicon-python-plain"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-java-plain"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-javascript-plain"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-typescript-plain"></i>
+                                <span>TypeScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-bash-plain"></i>
+                                <span>Bash</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3><i class="fas fa-database"></i> Databases</h3>
+                            <div class="skill-item">
+                                <i class="devicon-postgresql-plain"></i>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-oracle-original"></i>
+                                <span>PL/SQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-mongodb-plain"></i>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-graphql-plain"></i>
+                                <span>GraphQL</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3><i class="fas fa-toolbox"></i> Frameworks/Tools</h3>
+                            <div class="skill-item">
+                                <i class="devicon-codeigniter-plain"></i>
+                                <span>FastAPI</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-nodejs-plain"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-express-original"></i>
+                                <span>Express</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-react-plain"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-django-plain"></i>
+                                <span>Django</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3><i class="fas fa-cogs"></i> DevOps</h3>
+                            <div class="skill-item">
+                                <i class="devicon-jenkins-plain"></i>
+                                <span>Jenkins</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-docker-plain"></i>
+                                <span>Docker</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3><i class="fas fa-tasks"></i> Project Management</h3>
+                            <div class="skill-item">
+                                <i class="devicon-trello-plain"></i>
+                                <span>Trello</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-git-plain"></i>
+                                <span>Git</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-group">
+                            <h3><i class="fas fa-cloud"></i> Cloud Platforms</h3>
+                            <div class="skill-item">
+                                <i class="devicon-googlecloud-plain"></i>
+                                <span>Google Cloud</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-heroku-plain"></i>
+                                <span>Heroku</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="devicon-vercel-plain"></i>
+                                <span>Vercel</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="skills-section">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                    </ul>
+            <!-- Contact Section -->
+            <section id="contact" class="contact-section">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
+                    <div class="contact-links">
+                        <a href="mailto:your.email@example.com" class="contact-button">Email Me</a>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="contact-button">LinkedIn</a>
+                    </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <ul>
-                        <li>Node.js</li>
-                        <li>Express</li>
-                        <li>Python</li>
-                        <li>SQL</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools</h3>
-                    <ul>
-                        <li>Git</li>
-                        <li>VS Code</li>
-                        <li>Docker</li>
-                        <li>AWS</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.</p>
-                <div class="contact-links">
-                    <a href="mailto:your.email@example.com" class="contact-button">Email Me</a>
-                    <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="contact-button">LinkedIn</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <p>© 2024 Your Name. All rights reserved.</p>
-            <p>Built with HTML, CSS, and JavaScript</p>
-        </footer>
+            <!-- Footer -->
+            <footer class="footer">
+                <p>© 2024 Your Name. All rights reserved.</p>
+                <p>Built with HTML, CSS, and JavaScript</p>
+            </footer>
+        </div>
     </div>
 
     <script defer src="./assets/js/app.js" type="module"></script>
