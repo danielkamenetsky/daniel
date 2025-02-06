@@ -4,7 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow: visible;
 }
 
 body {
@@ -16,7 +16,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 canvas {
@@ -30,8 +32,10 @@ canvas {
   position: relative;
   z-index: 2;
   color: #fff;
-  height: 100vh;
+  height: auto;
+  min-height: 100vh;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 1rem;
   background: rgba(0, 0, 0, 0.7);
 }
@@ -41,15 +45,16 @@ canvas {
   top: 0;
   left: 0;
   right: 0;
-  padding: 1rem 2rem;
+  padding: 1rem;
   background: rgba(0, 0, 0, 0.8);
   z-index: 3;
 }
 
 .nav-links {
   display: flex;
-  justify-content: flex-end;
-  gap: 2rem;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .nav-links a {
@@ -159,6 +164,7 @@ canvas {
   text-align: center;
   max-width: 600px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .intro {
@@ -179,6 +185,7 @@ canvas {
 .description {
   margin-bottom: 2rem;
   line-height: 1.6;
+  font-size: 0.9rem;
 }
 
 .highlight {
@@ -208,28 +215,15 @@ canvas {
   margin-bottom: 1rem;
 }
 
-.social-links a {
-  color: var(--text-color);
-  font-size: 1.5rem;
-  transition: color 0.3s ease;
-}
-
-.social-links .social-link.github-link {
-  color: #5ec040 !important;
-}
-
-.social-links .social-link.linkedin-link {
-  color: #0fb500 !important;
-}
-
-.social-links .social-link.email-link {
+.social-links .social-link {
   color: #0aff0a !important;
+  text-decoration: none !important;
+  transition: opacity 0.3s ease;
 }
 
-.social-links .social-link.github-link:hover,
-.social-links .social-link.linkedin-link:hover,
-.social-links .social-link.email-link:hover {
-  text-decoration: underline;
+.social-links .social-link:hover {
+  opacity: 0.8;
+  text-decoration: none !important;
 }
 
 /* Skills Section Styles */
@@ -329,12 +323,182 @@ canvas {
   height: 500px;
   border-radius: 50%;
   object-fit: cover;
-  border: 3px solid var(--highlight-color);
 }
 
+/* Tablet and smaller */
 @media (max-width: 768px) {
   .profile-image img {
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* Add these styles */
+.highlight-link {
+  color: #0aff0a !important;
+  text-decoration: none !important;
+  transition: opacity 0.3s ease;
+}
+
+.highlight-link:hover {
+  opacity: 0.8;
+  text-decoration: none !important;
+}
+
+.highlight-link:visited {
+  color: #0aff0a !important;
+}
+
+/* Mobile Navigation Styles */
+.nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 3;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-section {
+    padding-top: 20vh;
+    height: auto;
+    min-height: 60vh;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+  }
+
+  .hero-section p {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .projects-grid {
+    padding: 0 1rem;
+  }
+
+  .project-card {
+    padding: 1rem;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .skill-group {
+    padding: 1rem;
+  }
+
+  .about {
+    padding: 0 1rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .social-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+}
+
+/* Fix overflow issues */
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+*,
+*::after,
+*::before {
+  overflow: visible;
+}
+
+.portfolio-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: auto;
+  min-height: 100vh;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 1rem;
+    margin-bottom: 4rem; /* Extra space for mobile */
+  }
+
+  .contact-content {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .contact-content p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
   }
 }
